@@ -1,5 +1,37 @@
 
+@charset "utf-8";
+
+/* ============================== 
+	- Template Name: AppMore
+	- Autor: mager19
+	- Email: mager19@gmail.com
+	- Name File: style.css
+	- Version 1.0
+	- Website: http://mager19.com 
+	- Copyright: (C) 2017
+=================================
+
+-------------------------
+	Stylesheet Guide
+-------------------------
+
+1.	Import styles
+	
+	
+2.	Basic Elements
+
+3.	Sections
+	-Header
+	-About
+	-Features
+	-Pricing
+	-Team
+	-Cta
+	-Footer
+
+/*************************************/
 /* Basic Styles --------------------------------------------------------*/
+/*************************************/
 html{
   font-size: 62.5%;
 }
@@ -21,9 +53,11 @@ img{
 	max-width: 100%;
 }
 
-.title_section{
+.title__section{
 	padding:0;
 	margin: 0;
+	margin-bottom:1em;
+	text-align: center;
 }
 
 .espaciado{
@@ -31,9 +65,21 @@ img{
 }
 
 
+/*************************************/
+/*********** 3. SECTIONS *************/
+/*************************************/
+
 /*Header ------------------*/
 .header{
 	background-color: lightgray;
+	position: relative;
+}
+
+.logo{
+	left: 1em;
+	position: absolute;
+	top: 0.5em;
+	z-index: 100;
 }
 
 /*Section About  ------------------*/
