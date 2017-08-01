@@ -1,7 +1,7 @@
 {
   "name": "appmore",
   "version": "1.0.0",
-  "description": "",
+  "description": "Base de Bootrstrap, Gulp con gulp file creado, y normalize para iniciar a trabajar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
