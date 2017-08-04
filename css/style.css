@@ -29,6 +29,16 @@
 	-Cta
 	-Footer
 
+
+	
+/*************************************/
+/* Import Styles --------------------------------------------------------*/
+/*************************************/
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Rajdhani:400,700');
+
+/*font-family: 'Josefin Slab', serif;
+font-family: 'Didact Gothic', sans-serif;*/
+
 /*************************************/
 /* Basic Styles --------------------------------------------------------*/
 /*************************************/
@@ -36,6 +46,7 @@ html{
   font-size: 62.5%;
 }
 body{
+	font-family: 'Didact Gothic', sans-serif;
 	font-size: 1.7rem;
 	letter-spacing: 0.01rem;
 	color: #333;
@@ -52,6 +63,16 @@ a:hover{
 img{
 	max-width: 100%;
 }
+
+ul{
+	margin-left: -2.2em;
+}
+
+ul li{
+	display: inline-block;
+	list-style: none;
+}
+
 
 .title__section{
 	padding:0;
@@ -71,7 +92,10 @@ img{
 
 /*Header ------------------*/
 .header{
-	background-color: lightgray;
+	background:linear-gradient(rgba(000, 000, 000, 0.7), rgba(0, 0, 0, 0.70)), url('../img/background__header.jpg');
+	background-size: cover;
+	background-position: center center;
+	height: 70vh;
 	position: relative;
 }
 
@@ -80,6 +104,22 @@ img{
 	position: absolute;
 	top: 0.5em;
 	z-index: 100;
+}
+
+.presentation{
+	color:#fff;
+	text-align: center;
+}
+
+.presentation h1{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 4.5em;
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+
+.presentation p{
+	font-size: 1.5em;
 }
 
 /*Section About  ------------------*/
@@ -97,9 +137,25 @@ img{
 	background-color: #ccc;
 }
 
+.pricing__table{
+	background-color: #fff;
+	padding: 1em;
+	margin-top: 1em;
+}
+
 /*Section Team ------------------*/
 .team{
 	background-color: lightyellow;
+}
+
+.team__member{
+	margin-top: 1em;
+}
+
+.team__member--active ul
+
+.team__member--active ul li{
+	margin-right: 1em;
 }
 
 /*Section Cta ------------------*/
@@ -110,4 +166,5 @@ img{
 /*Footer ------------------*/
 .footer{
 	background-color: #333;
+	color:#fff;
 }
