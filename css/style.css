@@ -73,17 +73,65 @@ ul li{
 	list-style: none;
 }
 
+blockquote{
+	border-color:#CA424C;
+	color:#CA424C;
+}
+
+figure {
+    margin: 0em;
+}
+
+video{
+	width: 100%;
+	object-fit: inherit;
+	height: 50vh;
+}
+
+.nopadding{
+	padding: 0;
+	margin: 0;
+}
+
 
 .title__section{
-	padding:0;
-	margin: 0;
+	font-size: 3em;
+	letter-spacing: 2px;
 	margin-bottom:1em;
+	margin: 0;
+	margin-bottom: 1em;
+	padding:0;
 	text-align: center;
 }
 
 .espaciado{
 	padding: 5em 0;
 }
+
+.my__button{
+	background-color:#CA424C;
+	border-radius: 1.5em;
+	color:#fff;
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 1.2em 0;
+	padding: 0.5em 3em;
+	text-align: center;
+	width: 40%;
+}
+
+.my__button:hover{
+	background-color:#333;
+	border-radius: 20px;
+	box-shadow: 0px 3px 4px #333;
+	color:#fff;
+	padding: 0.5em 3em;
+}
+
+.icon-bar{
+	background-color: #fff;
+}
+
 
 
 /*************************************/
@@ -116,20 +164,62 @@ ul li{
 	font-size: 4.5em;
 	font-weight: 800;
 	letter-spacing: 3px;
+	margin-top: 1.15em;
 }
 
 .presentation p{
 	font-size: 1.5em;
+	margin-top: -1.5em;
 }
+
+.navbar{
+	margin-top: 1.3em;
+}
+
+.navbar ul li{
+	margin-left: 1.5em;
+}
+
+.navbar ul li a{
+	color:#fff;
+	font-size: 1em;
+}
+
+.navbar ul li a:hover{
+	background-color: transparent;
+	color:#ca424c;
+	font-weight: 700;
+}
+
+.support{
+	margin-left: 16em!important;
+}
+
+.download{
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 25px;
+	padding: 0 2em;
+	margin-left: 1em;
+	text-align: center;
+}
+
+.download:hover{
+	background-color: #333;
+}
+
 
 /*Section About  ------------------*/
 .about{
-	background-color: lightblue;
+	background-color: #F9F9F9;
+}
+
+.about .title__section{
+	margin-top: 0.8em;
 }
 
 /*Section Features ------------------*/
 .features{
-	background-color: #f9f9f9;
+	background-color: #fff;
 }
 
 /*Section Pricing ------------------*/
@@ -167,4 +257,175 @@ ul li{
 .footer{
 	background-color: #333;
 	color:#fff;
+}
+
+
+
+
+
+
+
+
+/*************************************/
+/*********** 4. MediaQueries *************/
+/*************************************/
+
+@media screen and (max-width: 1440px){
+	.presentation h1 {
+	    margin-top: 0.3em;
+	}
+}
+
+@media screen and (max-width: 1366px){
+	.presentation h1 {
+	    margin-top: 0.6em;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.support {
+	    margin-left: 6em!important;
+	}
+	.presentation h1 {
+	    font-size: 3em;
+	    margin-top: 0.1em;
+	}
+	.presentation p {
+	    font-size: 1.2em;
+	    margin-top: -1.5em;
+	}
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+	.header{
+		overflow:hidden;
+	}
+	.navbar {
+    	margin-top: 1.5em;
+    	
+	}	
+	.navbar ul li {
+    	margin-left: 0em;
+    	text-align: right;
+	}
+	.download{
+		background-color: rgba(255,255,255,0);
+		margin-left: 0em;
+		padding: 0;
+	}
+	.support{
+		margin-left: 0!important;
+	}
+	
+	.presentation h1 {
+	    font-size: 3.5em;
+	    margin-top: 1.6em;
+	}
+
+	.presentation p {
+    	font-size: 1.2em;
+    	margin-top: 0em;
+	}
+
+	.my__button {
+        font-size: 1em;
+    	width: 90%;
+	}
+
+	.download:hover{
+		background-color: transparent;
+	}
+
+
+}
+
+
+@media screen and (max-width: 480px){
+	.header{
+		overflow:hidden;
+	}
+	.navbar {
+    	margin-top: 0em;
+    	
+	}	
+	
+	.download{
+		background-color: rgba(255,255,255,0);
+		margin-left: 0em;
+		padding: 0;
+	}
+	.support{
+		margin-left: 0!important;
+	}
+	
+	.presentation h1 {
+	    font-size: 1.5em;
+	    margin-top: 1.6em;
+	}
+
+	.presentation p {
+    	font-size: 0.9em;
+    	margin-top: 0em;
+	}
+
+	.my__button {
+        font-size: 1em;
+    	width: 90%;
+	}
+
+	.download:hover{
+		background-color: transparent;
+	}
+
+	.title__section{
+		font-size: 1.5em;
+	}
+
+	.about .my__button{
+		margin-bottom: 4em;
+	}
+
+	video {
+	    height: 40vh;
+	}
+
+
 }

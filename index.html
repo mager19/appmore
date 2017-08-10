@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AppMore</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -38,8 +39,8 @@
 				        <li class="active"><a href="#">Features <span class="sr-only">(current)</span></a></li>
 				        <li><a href="#">Pricing</a></li>
 				        <li><a href="#">Team</a></li>
-				        <li><a href="#">Support</a></li>
-				        <li><a href="#">Download</a></li>			        
+				        <li class="support"><a href="#">Support</a></li>
+				        <li class="download"><a href="#">Download</a></li>			        
 				      </ul>				      
 				    </div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
@@ -65,16 +66,34 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
-				<h3>AppMore</h3>
+				<h2 class="title__section">AppMore</h2>
 				<blockquote>
 					The solution you were looking for to reach your customers, communicate with them, provide them with an effective means of contact and analyze their responses.
 				</blockquote>
-				<p>The ideal features to meet the need you have, with a clean and simple interface, you can enjoy many features with the free version or pay the premium version</p>	
+				<p>The ideal features to meet the need you have, with a clean and simple interface, you can enjoy many features with the free version or pay the premium version. Measuring customer satisfaction will allow you to have an overall view of what is being done and the results you are getting, so you can be sure to continue with that strategy or change course</p>	
 				<p>Measuring customer satisfaction will allow you to have an overall view of what is being done and the results you are getting, so you can be sure to continue with that strategy or change course</p>	
+				<p>The ideal features to meet the need you have, with a clean and simple interface, you can enjoy many features with the free version or pay the premium version. Measuring customer satisfaction will allow you to have an overall view of what is being done and the results you are getting, so you can be sure to continue with that strategy or change course</p>	
 				<a href="#" class="my__button">Get Started</a>		
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<img src="https://imgholder.ru/600x300/2196F3/ECEFF1.jpg&text=imgHolder&font=bebas&fz=36" alt="">
+				<div class="row">
+					<div class="col-xs-6 col-md-6 nopadding">
+						<figure>
+							<img src="img/aboutleft.png" alt="aboutleft">
+						</figure>
+					</div>
+					<div class="col-xs-6 col-md-6 nopadding">
+						<figure>
+							<img src="img/aboutright.png" alt="aboutleft">
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-12 nopadding">
+						<video class="video" poster="img/video.png">
+						  <source src="img/Workaholic.webm" type="video/webm">
+						  Your browser does not support the video tag.
+						</video>								
+					</div>
+				</div>
 			</div>			
 		</div>
 	</div>
@@ -244,5 +263,13 @@
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+
+<script>
+$( document ).ready(function() {
+   $('.video').click(function(){this.paused?this.play():this.pause();});
+});
+
+	
+</script>
 </body>
 </html>
