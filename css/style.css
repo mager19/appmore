@@ -65,7 +65,7 @@ img{
 }
 
 ul{
-	margin-left: -2.2em;
+	margin-left: -1em;
 }
 
 ul li{
@@ -74,8 +74,10 @@ ul li{
 }
 
 blockquote{
+	background-color: #f9f9f9;
 	border-color:#CA424C;
 	color:#CA424C;
+	margin-top: 1.5em;
 }
 
 figure {
@@ -93,6 +95,37 @@ video{
 	margin: 0;
 }
 
+.boxy{
+	position: relative;
+}
+
+
+.boxy::before{
+	background-color: #CA424C;
+	content:" ";
+	display: block;
+	height: 80px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	width: 80px;
+}
+
+.boxy--left{
+	position: relative;
+}
+
+
+.boxy--left::before{
+	background-color: #CA424C;
+	content:" ";
+	display: block;
+	height: 80px;
+	position: absolute;
+	top: 0px;
+	left:0;
+	width: 80px;
+}
 
 .title__section{
 	font-size: 3em;
@@ -102,6 +135,14 @@ video{
 	margin-bottom: 1em;
 	padding:0;
 	text-align: center;
+}
+
+.subtitle__section{
+	font-size: 1.1em;
+	margin-left: 15%;
+	text-align: center;
+	margin-bottom: 3.5em;
+	width: 70%;
 }
 
 .espaciado{
@@ -220,6 +261,58 @@ video{
 /*Section Features ------------------*/
 .features{
 	background-color: #fff;
+}
+
+.slide{
+	margin-top: 6.5em;
+}
+
+.dots__navigation a{
+    border:1px solid #c4c4c4;
+    border-radius: 50%;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     color:#c4c4c4;
+     font-size: 1.2em;
+	padding: 1em 1.5em;
+}
+
+.dots__navigation a:hover{
+	background-color: #ca424c;
+	border:2px solid #ca424c;
+	color:#fff;
+}
+
+.activo{
+	background-color: #ca424c;
+	border:2px solid #ca424c;
+	color:#fff;
+}
+
+.features__slide{
+	margin-top: 4em;
+}
+
+.features__slide__item h2{
+	color:#ca424c;
+	font-size: 2.5em;
+}
+
+.features__slide__item p{
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin-top: 2em;
+}
+.features__slide__item ul li{
+	margin-top: 1em;
+}
+
+.features__slide__item ul li:before{
+	content:"\2B17";
+	color:#CA424C;
+	font-size: 1.3em;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
 /*Section Pricing ------------------*/
@@ -406,11 +499,6 @@ video{
     	margin-top: 0em;
 	}
 
-	.my__button {
-        font-size: 1em;
-    	width: 90%;
-	}
-
 	.download:hover{
 		background-color: transparent;
 	}
@@ -419,12 +507,21 @@ video{
 		font-size: 1.5em;
 	}
 
-	.about .my__button{
+	.my__button{
 		margin-bottom: 4em;
+		width: 100%;
+	}
+
+	.about .my__button{
+		margin-top: 3em;
 	}
 
 	video {
 	    height: 40vh;
+	}
+
+	.about .title__section {
+    	margin-top: 0em;
 	}
 
 
