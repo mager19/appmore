@@ -10,6 +10,18 @@ $( document ).ready(function() {
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  fade:true,
+		  mobilefirst:true,
+		  responsive: [
+            {
+                breakpoint: 1280,
+                settings: "slick"
+            },
+            {
+                breakpoint: 800,
+                settings: "slick"
+            }
+          ]
+		  
 		  
 	});
 	// Dots navigation Slide Features
