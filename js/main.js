@@ -31,6 +31,15 @@ $( document ).ready(function() {
 	   $('.features__slide').slick('slickGoTo', slideno - 1);
 	});
 
+	$('.team__member[data-member]').click(function(){
+		var member = $(this).data('member');
+		$('.team__member--active__picture').css({
+			"background-image": "url('img/members/member" + member + "full.png')"
+		});
+
+		$('.team__member--active h3').css('opacity', '0.2');
+
+	});
 
 
 });

@@ -416,11 +416,76 @@ video{
 	margin-top: 1em;
 }
 
-.team__member--active ul
-
-.team__member--active ul li{
-	margin-right: 1em;
+.team__member figure{
+	background-color: #ca424c;
 }
+
+.team__member figure figcaption{
+	position: absolute;
+	top: 60%;
+	width: 100%;
+}
+
+.team__member figure figcaption h3{
+	color:#fff;
+	font-weight: 600;
+	margin-left: 0.5em;
+	text-shadow: 3px 3px 2px #333;
+}
+
+.team__member figure figcaption h4{
+	background-color: #ca424c;
+	color:#fff;
+	font-size: 0.8em;
+	padding: 0.5em 0;
+	padding-left: 1em;
+	width: 50%;
+}
+
+.team__member figure img{
+	cursor: pointer;
+	-webkit-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	transition: all 0.8s;
+	opacity: 1;
+}
+
+.team__member figure:hover img {
+	opacity: 0.4;
+}
+
+.team__member__right{
+	display: none;
+}
+
+.team__member--active{
+	display: block!important;
+	padding: 0 3em;
+}
+
+.team__member--active__picture{
+	background-image: url('../img/members/member1full.png');
+	background-size: cover;
+	background-position: top center;
+	height: 25em;
+	margin-top: 1em;
+	width: 100%;
+}
+
+.team__member--active h3{
+	font-size: 3em;
+}
+
+.team__member--active a{
+	font-size: 1em;
+}
+
+.team__member--active p{
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-top: 1em;
+}
+
 
 /*Section Cta ------------------*/
 .cta{
