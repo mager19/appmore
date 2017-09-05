@@ -32,10 +32,16 @@ $( document ).ready(function() {
 	});
 
 	$('.team__member[data-member]').click(function(){
-		var member = $(this).data('member');
-		$('.team__member__right[data-member-right]').addClass("team__member--active");
+	    var memberLeft = $(this).data('member');
+		
+		$(".team__member__right").each(function(){
+			var memberRight = $(this).data('active');
+			if(memberLeft==memberRight){
+				$(this).addClass('team__member--active').siblings().removeClass('team__member--active');;
+			}
+		});
+	
 
-		$('.team__member--active h3').css('opacity', '0.2');
 
 	});
 
