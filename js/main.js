@@ -33,9 +33,7 @@ $( document ).ready(function() {
 
 	$('.team__member[data-member]').click(function(){
 		var member = $(this).data('member');
-		$('.team__member--active__picture').css({
-			"background-image": "url('img/members/member" + member + "full.png')"
-		});
+		$('.team__member__right[data-member-right]').addClass("team__member--active");
 
 		$('.team__member--active h3').css('opacity', '0.2');
 
