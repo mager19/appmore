@@ -414,6 +414,7 @@ video{
 
 .team__member{
 	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 
 .team__member figure{
@@ -463,13 +464,8 @@ video{
 	padding: 0 3em;
 }
 
-.team__member--active__picture{
-	background-image: url('../img/members/member1full.png');
-	background-size: cover;
-	background-position: top center;
-	height: 25em;
+.team__member--active__picture img{
 	margin-top: 1em;
-	width: 100%;
 }
 
 .team__member--active h3{
