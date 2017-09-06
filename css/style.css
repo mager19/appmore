@@ -406,6 +406,9 @@ video{
 	font-weight: 700;
 }
 
+.callus a{
+	color:#CA424C;
+}
 
 /*Section Team ------------------*/
 .team{
@@ -459,6 +462,19 @@ video{
 	display: none;
 }
 
+.team__member__right ul{
+	margin-left: -2.2em;
+}
+
+.team__member__right li{
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.team__member__right li a img{
+	width: 30px;
+}
+
 .team__member--active{
 	display: block!important;
 	padding: 0 3em;
@@ -469,15 +485,16 @@ video{
 }
 
 .team__member--active h3{
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 .team__member--active a{
+	color:#CA424C;
 	font-size: 1em;
 }
 
 .team__member--active p{
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 1.3em;
 	margin-top: 1em;
 }
@@ -485,20 +502,40 @@ video{
 
 /*Section Cta ------------------*/
 .cta{
-	background-color: lightpink;
+	background-color: #CA424C;
+	color:#fff;
+	text-align: center;
+}
+
+.cta h2{
+	font-size: 4.5em;
+	font-weight: 700;
+}
+
+.cta p{
+	font-size: 2em;
+	font-weight: 200;
+}
+
+.cta .my__button{
+	background-color: #fff;
+	color:#CA424C;
+}
+
+.cta .my__button:hover{
+	background-color:#333;
+	border-radius: 20px;
+	box-shadow: 0px 3px 4px #333;
+	color:#fff;
+	padding: 0.5em 3em;
 }
 
 /*Footer ------------------*/
 .footer{
 	background-color: #333;
 	color:#fff;
+	text-align: center;
 }
-
-
-
-
-
-
 
 
 /*************************************/
@@ -680,7 +717,20 @@ video{
 	.features__slide__item--info {
     	padding: 0em 0em;
 	}
-
-
-
+	.team__member figure figcaption h3{
+		font-size: 1em;
+		width: 100%;
+	}
+	.team__member figure figcaption {
+	    top: 30%;
+	}
+	.team__member figure figcaption h4 {
+    	width: 70%;
+	}
+	.cta h2 {
+	    font-size: 3em;
+	}
+	.cta p {
+    	font-size: 1.5em;
+	}
 }
