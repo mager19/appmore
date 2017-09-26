@@ -56,9 +56,10 @@ html{
   font-size: 62.5%;
 }
 body{
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 1.7rem;
+	font-family: "Open Sans", Sans-serif;
+	font-size: 1.6rem;
 	letter-spacing: 0.01rem;
+	line-height: 1.7em;
 	color: #333;
 	background-color: #fff;
 	text-rendering: optimizeLegibility;
