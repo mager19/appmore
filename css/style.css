@@ -609,7 +609,11 @@ video{
 
 @media screen and (max-width: 1366px){
 	.presentation h1 {
-	    margin-top: 0.6em;
+		font-size: 3em;
+	    margin-top: 0.5em;
+	}
+	.presentation p {
+	    font-size: 1.2em;
 	}
 }
 
@@ -792,4 +796,11 @@ video{
 	.cta p {
     	font-size: 1.5em;
 	}
+	.separator--left h3 {
+    	font-size: 2em;
+    }
+    .separator--left h4 {
+    	margin-top: 4em;
+	}
+
 }
