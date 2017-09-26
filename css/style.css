@@ -29,6 +29,16 @@
 	-Cta
 	-Footer
 
+Info:
+
+Background clases
+	-boxy::before
+	-boxy--left::before
+	-my__button
+	-dots__navigation a:hover
+
+Color clases 
+	-blockquote
 
 	
 /*************************************/
@@ -157,7 +167,7 @@ video{
 	display: inline-block;
 	font-size: 1.2em;
 	margin: 1.2em 0;
-	padding: 0.5em 3em;
+	padding: 0.5em 0em;
 	text-align: center;
 	width: 40%;
 }
@@ -167,13 +177,34 @@ video{
 	border-radius: 20px;
 	box-shadow: 0px 3px 4px #333;
 	color:#fff;
-	padding: 0.5em 3em;
+	padding: 0.5em 0em;
+}
+
+.my__button--white{
+	background-color: #fff;
+	color:#CA424C;
+	text-align: center;
+}
+
+.my__button--white:hover{
+	background-color:#333;
+	border-radius: 20px;
+	box-shadow: 0px 3px 4px #333;
+	color:#fff;
+	padding: 0.5em 0em;
 }
 
 .icon-bar{
 	background-color: #fff;
 }
 
+.bgcolor__p{
+	background-color:#ca424c;
+}
+
+.color__p{
+	color:#ca424c;
+}
 
 
 /*************************************/
@@ -262,6 +293,7 @@ video{
 /*Section Features ------------------*/
 .features{
 	background-color: #fff;
+	overflow-x: hidden;
 }
 
 .slide{
@@ -288,18 +320,11 @@ video{
 	color:#fff;
 }
 
-.activo{
-	background-color: #ca424c;
-	border:2px solid #ca424c;
-	color:#fff;
-}
-
 .features__slide{
 	margin-top: 4em;
 }
 
 .features__slide__item h2{
-	color:#ca424c;
 	font-size: 2.5em;
 }
 
@@ -355,7 +380,6 @@ video{
 
 .pricing__table h2{
 	border-bottom:2px solid #ca424c;
-	color:#ca424c;
 	font-size: 2em;
 	padding-bottom: 0.5em;
 	margin-left: 15%;
@@ -363,7 +387,6 @@ video{
 }
 
 .pricing__table h3{
-	color:#ca424c;
 	font-size: 6em;
 	font-weight: 200;
 }
@@ -386,7 +409,6 @@ video{
 }
 
 .pricing__table ul li span{
-	color:#ca424c;
 	font-weight: 700;
 	padding-right: 0.7em;
 }
@@ -406,26 +428,19 @@ video{
 }
 
 .callus h4 span{
-	color:#ca424c;
 	font-weight: 700;
 }
 
-.callus a{
-	color:#CA424C;
-}
 
 /*Section Team ------------------*/
 .team{
 	background-color: #fff;
+	overflow-x: hidden;
 }
 
 .team__member{
 	margin-top: 1em;
 	margin-bottom: 0.5em;
-}
-
-.team__member figure{
-	background-color: #ca424c;
 }
 
 .team__member figure figcaption{
@@ -442,7 +457,6 @@ video{
 }
 
 .team__member figure figcaption h4{
-	background-color: #ca424c;
 	color:#fff;
 	font-size: 0.8em;
 	padding: 0.5em 0;
@@ -492,21 +506,73 @@ video{
 	font-size: 2.5em;
 }
 
-.team__member--active a{
-	color:#CA424C;
-	font-size: 1em;
-}
-
 .team__member--active p{
 	font-size: 1.1em;
 	line-height: 1.3em;
 	margin-top: 1em;
 }
 
+/*Section Separator ------------------*/
+.separator{
+	background-image: url('../img/background__separator.jpg');
+	background-size: cover;
+	background-position: center center;
+
+}
+
+.separator--left{
+	background-color: rgba(202,66,76,0.9);
+	color:#fff;
+	padding: 2em;
+}
+
+.separator--left h3{
+	font-size: 3em;
+	margin-top: 5px;
+}
+
+.separator--left p{
+	border-top:1px solid #ccc;
+	margin-top: 2em;
+}
+
+.separator--left h4{
+	margin-top: 1em;
+}
+
+
+/*Section FAQ ------------------*/
+.faq--left{
+	padding-right: 4em;
+}
+
+.faq--left h3{
+	border-left:3px solid #ca424c;
+	padding-left:10px;
+	font-weight: 700;
+}
+
+.faq--left p{
+	margin-bottom: 3em;
+}
+
+.faq--right h3{
+	font-size: 3em;
+	font-weight: 800;
+	margin-top: 1px;
+}
+
+.faq--right h4{
+	margin-top: 1em;
+}
+
+.faq--right p{
+	margin-top: 1em;
+}
+
 
 /*Section Cta ------------------*/
 .cta{
-	background-color: #CA424C;
 	color:#fff;
 	text-align: center;
 }
@@ -521,24 +587,13 @@ video{
 	font-weight: 200;
 }
 
-.cta .my__button{
-	background-color: #fff;
-	color:#CA424C;
-}
-
-.cta .my__button:hover{
-	background-color:#333;
-	border-radius: 20px;
-	box-shadow: 0px 3px 4px #333;
-	color:#fff;
-	padding: 0.5em 3em;
-}
 
 /*Footer ------------------*/
 .footer{
 	background-color: #333;
 	color:#fff;
 	text-align: center;
+	padding: 2em 0;
 }
 
 
@@ -710,10 +765,10 @@ video{
 	}
 	.subtitle__section {
 	    font-size: 1em;
-	    margin-left: 5%;
+	    margin-left: 0;
 	    text-align: center;
 	    margin-bottom: 3em;
-	    width: 90%;
+	    width: 100%;
 	}
 	.slide {
     	margin-top: 1.5em;
