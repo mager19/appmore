@@ -37,13 +37,24 @@ $( document ).ready(function() {
 		$(".team__member__right").each(function(){
 			var memberRight = $(this).data('active');
 			if(memberLeft==memberRight){
-				$(this).addClass('team__member--active').siblings().removeClass('team__member--active');;
+				$(this).addClass('team__member--active').siblings().removeClass('team__member--active');
 			}
 		});
 	
 
 
 	});
+
+	$('a[href^="#"]').on('click', function (e) {
+					e.preventDefault();
+
+					var target = this.hash;
+					var $target = $(target);
+
+					$('html, body').animate({
+						'scrollTop': $target.offset().top
+					}, 1000, 'swing');
+				});
 
 
 });
